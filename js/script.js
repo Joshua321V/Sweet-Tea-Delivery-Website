@@ -1,4 +1,3 @@
-// --- Cart State ---
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function saveCart() {
@@ -16,7 +15,6 @@ function calculateGrandTotal() {
   return cart.reduce((sum, it) => sum + (it.total || it.price * it.quantity), 0);
 }
 
-// --- Add to Cart ---
 function addToCart(itemName, itemPrice) {
   let size = "N/A";
   let quantity = 1;
@@ -63,7 +61,6 @@ function addToCart(itemName, itemPrice) {
   displayCart();
 }
 
-// --- Display Cart ---
 function displayCart() {
   const cartItemsEl = document.getElementById("cart-items");
   const totalEl = document.getElementById("total");
@@ -128,7 +125,6 @@ function displayCart() {
   updateCartCount();
 }
 
-// --- Checkout via Google Form ---
 function buildGoogleFormPrefillURL() {
   const formBase = "https://docs.google.com/forms/d/e/1FAIpQLSfqFyt4ZizABH1CCt6XHKkvD_gp3xX2RI-KdEWZt6nS8Urjfg/viewform?usp=pp_url";
   if (cart.length === 0) return formBase;
@@ -159,7 +155,6 @@ function handleCheckout() {
   alert("Order sent to checkout form. Cart cleared.");
 }
 
-// --- Init ---
 document.addEventListener("DOMContentLoaded", () => {
   displayCart();
   updateCartCount();
@@ -193,7 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({top:0, behavior:'smooth'});
   });
 
-  // Carousel scroll buttons
   const prevBtn = document.querySelector(".explore-btn.prev");
   const nextBtn = document.querySelector(".explore-btn.next");
   const track = document.querySelector(".explore-track");
@@ -203,3 +197,4 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.addEventListener("click", () => track.scrollBy({left: 220, behavior: "smooth"}));
   }
 });
+
