@@ -134,19 +134,17 @@ h1, h2 {
   color: white;
 }
 
-/* Make the video act as background */
 .hero-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* fills background properly */
+  object-fit: cover; 
   z-index: 0;
-  filter: brightness(40%); /* darken a bit for readable text */
+  filter: brightness(40%);
 }
 
-/* Text content on top */
 .hero-content {
   position: relative;
   z-index: 1;
@@ -201,7 +199,6 @@ h1, h2 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* --- Drinks & Foods Carousel Section (Explore Style) --- */
 .explore-section {
   text-align: center;
   background-image: url("/Sweet Tea/images/milk\ tea\ pic.webp");
@@ -231,7 +228,6 @@ h1, h2 {
   margin-bottom: 25px;
 }
 
-/* --- Fixed Carousel Scroll --- */
 .explore-carousel {
   position: relative;
   width: 100%;
@@ -241,18 +237,18 @@ h1, h2 {
 .explore-track {
   display: flex;
   gap: 20px;
-  overflow-x: auto;            /* ✅ enable horizontal scroll */
-  scroll-behavior: smooth;     /* ✅ smooth scrolling */
+  overflow-x: auto;            
+  scroll-behavior: smooth;    
   padding: 10px;
-  scrollbar-width: none;       /* hide Firefox scrollbar */
+  scrollbar-width: none;       
 }
 
 .explore-track::-webkit-scrollbar {
-  display: none;               /* hide Chrome/Safari scrollbar */
+  display: none;             
 }
 
 .explore-card {
-  flex: 0 0 auto;              /* ✅ prevents shrinking */
+  flex: 0 0 auto;          
 }
 
 
@@ -286,7 +282,6 @@ h1, h2 {
   font-size: 1.1rem;
 }
 
-/* Navigation buttons */
 .explore-btn {
   position: absolute;
   top: 50%;
@@ -314,7 +309,6 @@ h1, h2 {
   right: 15px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .explore-card {
     flex: 0 0 160px;
@@ -324,8 +318,6 @@ h1, h2 {
   }
 }
 
-
-/* Footer Section */
 footer {
   background-color: #222;
   color: #fff;
@@ -342,7 +334,6 @@ footer {
   text-align: center;
 }
 
-/* Left: Social icons */
 .social {
   flex: 1;
   text-align: left;
@@ -361,17 +352,15 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #4aa4f8; /* highlight color */
+  color: #4aa4f8;
 }
 
-/* Center: Copyright */
 .copyright {
   flex: 1;
   text-align: center;
   font-size: 0.95em;
 }
 
-/* Right: Contact info */
 .contact-info {
   flex: 1;
   text-align: right;
@@ -386,7 +375,6 @@ footer {
   color: #4aa4f8;
 }
 
-/* Back to top button fixed on the right side */
 .back-to-top {
   position: fixed;
   bottom: 15px;
@@ -407,8 +395,6 @@ footer {
   color: #222;
 }
 
-
-/* Responsive layout */
 @media (max-width: 768px) {
   .foot {
     flex-direction: column;
@@ -419,3 +405,4 @@ footer {
     margin-top: 10px;
   }
 }
+
