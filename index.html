@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sweet Tea Philippines - Experience pure indulgence and freshness with authentic Philippine Sweet tea. Order online or visit our stores!">
+  <title>Sweet Tea Delivery</title>
+  <link rel="icon" type="image/x-icon" href="/Sweet Tea/images/Sweet Tea Logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="/Sweet Tea/images/Sweet Tea Logo.jpg" alt="Sweet Tea Logo">
+    <h1>Sweet Tea Delivery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="index.html#foot">Contact</a></li>
+        <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+        <li><a href="loginform.html" id="loginLink">Login/Register</a></li>
+        <li id="WelcomeUser"></li>
+        <li><a href="#" id="logoutLink" style="display:none;">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="/Sweet Tea/images/Sweet tea clip.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h2 class="first">Sweet Tea Near Me</h2>
+      <p>Experience pure indulgence and freshness</p>
+    </div>
+  </section>
+
+  <!-- Drinks & Foods Section -->
+  <section id="drinks-teaser" class="explore-section">
+    <h2>Drinks & Foods</h2>
+    <p>Taste the Sweet Tea difference</p>
+
+    <div class="explore-carousel">
+      <button class="explore-btn prev">&#10094;</button>
+      <div class="explore-track">
+        <!-- Chocolate Sweet Tea -->
+        <div class="explore-card">
+          <img src="/Sweet Tea/images/chocolate Sweet Tea.png" alt="Chocolate Sweet Tea">
+          <h3>Chocolate Sweet Tea</h3>
+          <p>₱60</p>
+          <button onclick="addToCart('Chocolate Sweet Tea', 60)">Add to Cart</button>
+        </div>
+        <div class="explore-card">
+          <img src="/Sweet Tea/images/taro Sweet tea.png" alt="Taro Sweet Tea">
+          <h3>Taro Sweet Tea</h3>
+          <p>₱60</p>
+          <button onclick="addToCart('Taro Sweet Tea', 60)">Add to Cart</button>
+        </div>
+        <div class="explore-card">
+          <img src="/Sweet Tea/images/vector Sweet Tea.png" alt="Vector Sweet Tea">
+          <h3>Vector Sweet Tea</h3>
+          <p>₱65</p>
+          <button onclick="addToCart('Vector Sweet Tea', 65)">Add to Cart</button>
+        </div>
+        <div class="explore-card">
+          <img src="/Sweet Tea/images/Brown Sugar Sweet Tea With Soft Serve And Golden Drizzle.png" alt="Brown Sugar Sweet Tea">
+          <h3>Brown Sugar Sweet Tea</h3>
+          <p>₱70</p>
+          <button onclick="addToCart('Brown Sugar Sweet Tea', 70)">Add to Cart</button>
+        </div>
+        <div class="explore-card">
+          <img src="/Sweet Tea/images/Strawberry-Sweet-Tea.jpg" alt="Strawberry Sweet Tea">
+          <h3>Strawberry Sweet Tea</h3>
+          <p>₱65</p>
+          <button onclick="addToCart('Strawberry Sweet Tea', 65)">Add to Cart</button>
+        </div>
+        <div class="explore-card">
+          <img src="/Sweet Tea/images/buffalo chicken wings.png" alt="Buffalo Chicken Wings">
+          <h3>Buffalo Chicken Wings</h3>
+          <p>₱80</p>
+          <button onclick="addToCart('Buffalo Chicken Wings', 80)">Add to Cart</button>
+        </div>
+        <div class="explore-card">
+          <img src="/Sweet Tea/images/hamburger.png" alt="Hamburger">
+          <h3>Hamburger</h3>
+          <p>₱75</p>
+          <button onclick="addToCart('Hamburger', 75)">Add to Cart</button>
+        </div>
+        <div class="explore-card">
+          <img src="/Sweet Tea/images/vanila bean apple pie.png" alt="Vanila Bean Apple Pie">
+          <h3>Vanila Bean Apple Pie</h3>
+          <p>₱85</p>
+          <button onclick="addToCart('Vanila Bean Apple Pie', 85)">Add to Cart</button>
+        </div>
+      </div>
+      <button class="explore-btn next">&#10095;</button>
+    </div>
+    <a href="menu.html" class="cta-button">View Menu</a>
+  </section>
+
+  <!-- Our Story Section -->
+  <section id="story">
+    <h2>Our Story</h2>
+    <div class="story-content">
+      <p>Authentic Philippine freshness</p><hr>
+      <p>We use fresh ingredients, house-made recipes, and a lot of love to make every meal and drink memorable.</p>
+      <p>Whether you’re here for a quick snack or a relaxing meal, Sweet Tea is all about flavor, quality, and good vibes.</p>
+    </div>
+  </section>
+
+  <!-- In-Store Section -->
+  <section id="in-store">
+    <h2>Grab a Drink in Store</h2>
+    <p>Step into Sweet Tea's first ever Philippines concept store! We offer fresh milk and tea beverages, crafted with high quality ingredients and brewed using traditional Philippine methods. Enjoy customizable, expertly made drinks, handcrafted in-store for a delightful tasting experience.</p>
+
+    <!-- Google Map -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.262143105441!2d120.98421921528702!3d14.599512789812826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2ddfddf2a7%3A0x5c6898db1e48b8ff!2sMarikina%2C%20Philippines!5e0!3m2!1sen!2sph!4v1695711266197!5m2!1sen!2sph" 
+        width="100%" 
+        height="350" 
+        style="border:0; border-radius: 10px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <a href="https://maps.google.com/?q=Marikina, Philippines" target="_blank" class="cta-button">Open in Google Maps</a>
+  </section>
+
+  <!-- Order Online Section -->
+  <section id="order-online">
+    <h2>Order Your Drink/Food Online</h2>
+    <p>Get your Sweet Tea fix from our latest Concept Store or through select SM branches nationwide. Enjoy your favorite flavors on the go, whenever, and wherever you crave.</p>
+    <a href="menu.html" class="cta-button">Order Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="foot">
+    <div class="foot">
+      <div class="social">
+        <p>Follow us on:</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Sweet Tea Delivery. All Rights Reserved.</p>
+      </div>
+      <div class="contact-info">
+        <p>Contact: <a href="mailto:Sweettea@gmail.com">Sweettea@gmail.com</a> | <a href="tel:+639560164968">+63 956 016 4968</a></p>
+        <a href="#" id="backToTop" class="back-to-top">⬆ Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

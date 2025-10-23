@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks Menu - Sweet Tea</title>
+  <link rel="icon" type="image/x-icon" href="/Sweet Tea/images/Sweet Tea Logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/Sweet Tea/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <image src="/Sweet Tea/images/Sweet Tea Logo.jpg" alt="Sweet Tea Logo"></image>
+    <h1>Sweet Tea Delivery</h1>
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="index.html#foot">Contact</a></li>
+    <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    <li><a href="loginform.html" id="loginLink">Login/Register</a></li>
+    <li id="WelcomeUser"></li>
+    <li><a href="#" id="logoutLink" style="display:none;">Logout</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h1>Our Drinks Menu</h1>
+    <p>Taste the Milksha difference with authentic Taiwanese freshness.</p>
+    <div class="menu-container">
+
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/chocolate Sweet Tea.png" alt="Chocolate Sweet Tea">
+        <h3>Chocolate Sweet Tea</h3>
+        <p>₱80</p>
+        <button onclick="addToCart('Chocolate Sweet Tea', 80)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/taro Sweet tea.png" alt="Taro Sweet Tea">
+        <h3>Taro Sweet Tea</h3>
+        <p>₱90</p>
+        <button onclick="addToCart('Taro Sweet Tea', 90)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/vector Sweet Tea.png" alt="Vector Sweet Tea">
+        <h3>Vector Sweet Tea</h3>
+        <p>₱95</p>
+        <button onclick="addToCart('Vector Sweet Tea', 95)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/Brown Sugar Sweet Tea With Soft Serve And Golden Drizzle.png" alt="Brown Sugar Sweet Tea With Soft Serve And Golden Drizzle">
+        <h3>Brown Sugar Sweet Tea With Soft Serve And Golden Drizzle</h3>
+        <p>₱85</p>
+        <button onclick="addToCart('Brown Sugar Sweet Tea With Soft Serve And Golden Drizzle', 85)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/Strawberry-Sweet-Tea.jpg" alt="Strawberry Sweet Tea">
+        <h3>Strawberry Sweet Tea</h3>
+        <p>₱100</p>
+        <button onclick="addToCart('Strawberry Sweet Tea', 100)">Add to Cart</button>
+      </div>
+      
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/cappuccino.png" alt="Cappuccino Sweet Tea">
+        <h3>Cappuccino Sweet Tea</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Cappuccino Sweet Tea', 65)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="meal">
+    <h1>Meal</h1>
+    <p>Try our new best meal</p>
+    <div class="menu-container">
+
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/buffalo chicken wings.png" alt="buffalo chicken wings">
+        <h3>Buffalo Chicken Wings</h3>
+        <p>₱180</p>
+        <button onclick="addToCart('buffalo chicken wings', 180)">Add to cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/hamburger.png" alt="hamburger">
+        <h3>Hamburger</h3>
+        <p>₱55</p>
+        <button onclick="addToCart('hamburger', 55)">Add to cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Sweet Tea/images/vanila bean apple pie.png" alt="vanila bean apple pie">
+        <h3>Vanila Bean Apple Pie</h3>
+        <p>₱200</p>
+        <button onclick="addToCart('vanila bean apple pie', 200)">Add to cart</button>
+      </div>
+    </div>
+      
+  </section>
+
+  <!-- Footer -->
+<footer id="foot">
+  <div class="foot">
+    <!-- Left: Follow Us -->
+    <div class="social">
+      <p>Follow us on:</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <!-- Center: Copyright -->
+    <div class="copyright">
+      <p>&copy; 2025 Sweet Tea Delivery. All Rights Reserved.</p>
+    </div>
+
+    <!-- Right: Contact and Back to Top -->
+    <div class="contact-info">
+      <p>Contact: <a href="mailto:Sweettea@gmail.com">Sweettea@gmail.com</a> | 
+         <a href="tel:+639560164968">+63 956 016 4968</a></p>
+      <a href="#" id="backToTop" class="back-to-top">⬆ Back to Top</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
